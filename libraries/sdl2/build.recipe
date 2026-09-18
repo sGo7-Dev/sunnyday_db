@@ -1,0 +1,23 @@
+# SDL2 BUILD RECIPE.
+
+[windows:default]
+mkdir build
+cmake -S . -B build -G "Visual Studio 17 2022"
+cmake --build build --config Release
+
+[linux:default]
+mkdir build
+cmake -S . -B build -G "Ninja"
+cmake --build build --config Release
+
+[macos:default = macos:ninja]
+
+[macos:xcode]
+mkdir build
+cmake -S . -B build -G "Xcode"
+cmake --build build --config Release
+
+[macos:ninja]
+mkdir build
+cmake -S . -B build -G "Ninja"
+cmake --build build --config Release

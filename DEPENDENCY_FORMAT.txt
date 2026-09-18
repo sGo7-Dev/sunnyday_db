@@ -1,0 +1,10 @@
+Each SunnyDay dependency needs 3 things:
+ - A directory with the name of the dependency
+ - A source file inside the directory (source.json)
+ - A build recipe file inside the directory (build.recipe)
+
+The source file is the file that tells the tool where to download the dependency.
+The build recipe file is the file that tells the tool how to build the downloaded dependency source. 
+
+The two files are required to allow the tool to try to handle the dependency in first place,
+if they're not present the tool throws an error because it doesn't know what to download and how to build it.

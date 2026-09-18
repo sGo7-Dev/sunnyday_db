@@ -1,0 +1,8 @@
+{
+    "version": "2.32.8",
+    "source": {
+        "type": "git",
+        "url": "https://github.com/libsdl-org/SDL.git",
+        "ref": "2.32.8"
+    }
+}
